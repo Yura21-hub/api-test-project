@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-14T17:43:37 EEST" name="Surefire suite" finished-at="2024-06-14T17:44:01 EEST" duration-ms="23813">
+    <groups>
+    </groups>
+    <test started-at="2024-06-14T17:43:37 EEST" name="Surefire test" finished-at="2024-06-14T17:44:01 EEST" duration-ms="23813">
+      <class name="tests.GetPetTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.GetPetTests@7cbd213e]" started-at="2024-06-14T17:43:54 EEST" name="setup" finished-at="2024-06-14T17:43:54 EEST" duration-ms="738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGetPetWithInvalidStatus()[pri:0, instance:tests.GetPetTests@7cbd213e]" started-at="2024-06-14T17:43:54 EEST" name="testGetPetWithInvalidStatus" finished-at="2024-06-14T17:43:55 EEST" duration-ms="904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPetWithInvalidStatus -->
+        <test-method signature="testGetPetWithNoExistId()[pri:0, instance:tests.GetPetTests@7cbd213e]" started-at="2024-06-14T17:43:55 EEST" name="testGetPetWithNoExistId" finished-at="2024-06-14T17:43:56 EEST" duration-ms="814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPetWithNoExistId -->
+        <test-method signature="testSuccessGetPetById()[pri:0, instance:tests.GetPetTests@7cbd213e]" started-at="2024-06-14T17:43:56 EEST" name="testSuccessGetPetById" finished-at="2024-06-14T17:43:57 EEST" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessGetPetById -->
+        <test-method signature="testSuccessGetPetByStatus(java.lang.String)[pri:0, instance:tests.GetPetTests@7cbd213e]" started-at="2024-06-14T17:43:57 EEST" name="testSuccessGetPetByStatus" data-provider="statusProvider" finished-at="2024-06-14T17:43:58 EEST" duration-ms="1186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[available]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessGetPetByStatus -->
+        <test-method signature="testSuccessGetPetByStatus(java.lang.String)[pri:0, instance:tests.GetPetTests@7cbd213e]" started-at="2024-06-14T17:43:58 EEST" name="testSuccessGetPetByStatus" data-provider="statusProvider" finished-at="2024-06-14T17:43:59 EEST" duration-ms="1196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pending]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessGetPetByStatus -->
+        <test-method signature="testSuccessGetPetByStatus(java.lang.String)[pri:0, instance:tests.GetPetTests@7cbd213e]" started-at="2024-06-14T17:43:59 EEST" name="testSuccessGetPetByStatus" data-provider="statusProvider" finished-at="2024-06-14T17:44:00 EEST" duration-ms="698" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sold]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessGetPetByStatus -->
+        <test-method is-config="true" signature="cleanUpData()[pri:0, instance:tests.GetPetTests@7cbd213e]" started-at="2024-06-14T17:44:00 EEST" name="cleanUpData" finished-at="2024-06-14T17:44:01 EEST" duration-ms="1079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpData -->
+      </class> <!-- tests.GetPetTests -->
+      <class name="tests.UpdatePetTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UpdatePetTests@42eca56e]" started-at="2024-06-14T17:43:45 EEST" name="setup" finished-at="2024-06-14T17:43:46 EEST" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSuccessUpdatePet()[pri:0, instance:tests.UpdatePetTests@42eca56e]" started-at="2024-06-14T17:43:46 EEST" name="testSuccessUpdatePet" finished-at="2024-06-14T17:43:47 EEST" duration-ms="743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessUpdatePet -->
+        <test-method signature="testUpdatePetWithEmptyBody()[pri:0, instance:tests.UpdatePetTests@42eca56e]" started-at="2024-06-14T17:43:47 EEST" name="testUpdatePetWithEmptyBody" finished-at="2024-06-14T17:43:48 EEST" duration-ms="1030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdatePetWithEmptyBody -->
+        <test-method signature="testUpdatePetWithInvalidId()[pri:0, instance:tests.UpdatePetTests@42eca56e]" started-at="2024-06-14T17:43:48 EEST" name="testUpdatePetWithInvalidId" finished-at="2024-06-14T17:43:49 EEST" duration-ms="1026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdatePetWithInvalidId -->
+        <test-method signature="testUpdatePetWithNotFoundId()[pri:0, instance:tests.UpdatePetTests@42eca56e]" started-at="2024-06-14T17:43:49 EEST" name="testUpdatePetWithNotFoundId" finished-at="2024-06-14T17:43:50 EEST" duration-ms="1028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdatePetWithNotFoundId -->
+        <test-method is-config="true" signature="cleanUpData()[pri:0, instance:tests.UpdatePetTests@42eca56e]" started-at="2024-06-14T17:43:50 EEST" name="cleanUpData" finished-at="2024-06-14T17:43:51 EEST" duration-ms="1007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpData -->
+      </class> <!-- tests.UpdatePetTests -->
+      <class name="tests.CreatePetTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CreatePetTests@b7dd107]" started-at="2024-06-14T17:43:37 EEST" name="setup" finished-at="2024-06-14T17:43:37 EEST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCreatePetWithIncorrectInputData()[pri:0, instance:tests.CreatePetTests@b7dd107]" started-at="2024-06-14T17:43:37 EEST" name="testCreatePetWithIncorrectInputData" finished-at="2024-06-14T17:43:42 EEST" duration-ms="5007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreatePetWithIncorrectInputData -->
+        <test-method signature="testFailedCreatePetWithEmptyBody()[pri:0, instance:tests.CreatePetTests@b7dd107]" started-at="2024-06-14T17:43:42 EEST" name="testFailedCreatePetWithEmptyBody" finished-at="2024-06-14T17:43:43 EEST" duration-ms="756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFailedCreatePetWithEmptyBody -->
+        <test-method signature="testSuccessCreatePet()[pri:0, instance:tests.CreatePetTests@b7dd107]" started-at="2024-06-14T17:43:43 EEST" name="testSuccessCreatePet" finished-at="2024-06-14T17:43:44 EEST" duration-ms="1121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessCreatePet -->
+        <test-method is-config="true" signature="cleanUpData()[pri:0, instance:tests.CreatePetTests@b7dd107]" started-at="2024-06-14T17:43:44 EEST" name="cleanUpData" finished-at="2024-06-14T17:43:45 EEST" duration-ms="892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpData -->
+      </class> <!-- tests.CreatePetTests -->
+      <class name="tests.DeletePetTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DeletePetTests@52f759d7]" started-at="2024-06-14T17:43:51 EEST" name="setup" finished-at="2024-06-14T17:43:52 EEST" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSuccessDeletePet()[pri:0, instance:tests.DeletePetTests@52f759d7]" started-at="2024-06-14T17:43:52 EEST" name="testSuccessDeletePet" finished-at="2024-06-14T17:43:53 EEST" duration-ms="1063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessDeletePet -->
+        <test-method is-config="true" signature="cleanUpData()[pri:0, instance:tests.DeletePetTests@52f759d7]" started-at="2024-06-14T17:43:53 EEST" name="cleanUpData" finished-at="2024-06-14T17:43:54 EEST" duration-ms="920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpData -->
+      </class> <!-- tests.DeletePetTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
