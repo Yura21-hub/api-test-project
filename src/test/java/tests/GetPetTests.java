@@ -1,5 +1,6 @@
 package tests;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import endpoints.PetApi;
 import io.restassured.response.Response;
 import models.PetModel;
@@ -29,8 +30,11 @@ public class GetPetTests extends TestUtil {
     }
 
     @Test
-    public void testSuccessGetPetById() {
+    public void testSuccessGetPetById() throws Exception {
         Response response = petApi.getPetById(petModel.getId());
+        String responseBody = readFileAsString("src/test/resources/createPet/responseCreatePet.json");
+        ObjectMapper mapper = new ObjectMapper();
+        petModel = mapper.readValue(responseBody, PetModel.class);
         assertStatusCode(response, 200);
         verifyPetResponseBody(response, petModel);
     }
