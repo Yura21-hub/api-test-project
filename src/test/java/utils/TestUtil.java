@@ -21,7 +21,7 @@ public class TestUtil {
     }
 
     protected void assertEqualsString(String string1, String string2) {
-        Assert.assertEquals(string1, string1);
+        Assert.assertEquals(string1, string2);
     }
 
     protected void verifyPetResponseBody(Response response, PetModel expectedPet) {
